@@ -1,7 +1,7 @@
 .header {
 position:relative;
 z-index:10;
-
+background-color: black;
      // Hamburger open styles
 &.open {
     .header__toggle {
@@ -23,21 +23,20 @@ top:69px;
 bottom:0;
 right:0;
 left:0;
-background-image: linear-gradient( transparent, $brightCyan );
+background-image: linear-gradient( transparent, $neonPink );
 
 }
 
 nav {
        padding-top: 0.1625rem;
        padding-bottom: 0.1625rem;
-width:100%;
-      
-        position: relative;
-       
+       width:100%;  
+       position: relative;
+
 }
 h3{
         color:$darkTeal;
-    
+     text-shadow: 0px 1px hotpink; 
     }
     
 &__toggle{ 
@@ -45,7 +44,7 @@ h3{
         display: block;
         width:26px;
         height:2px;
-        background-color:$brightCyan;
+        background-color:$neonPink;
         transition: all 300ms ease-in-out;
         transform-origin: 5.5px 1px;
 
@@ -56,7 +55,7 @@ h3{
         }
 &__menu{
     position:absolute;
-            background-color: $yellow;
+            background-color: $neonPurple;
             padding:1.625rem;
             width:calc(100% - 3rem);
             left:50%;
@@ -64,9 +63,9 @@ h3{
             margin-top: 1.5rem;
             border-radius: 5px;
 
-            a {
+            a{
                 display:block;
-                color: $brightCyan;
+                color: white;
                 padding: 0.625rem;
                 text-align:center;
             }
@@ -77,8 +76,8 @@ h3{
             a{
                 position:relative;
                 height:26px;
-                font-size: $font-sm;
-                color:$greyishBlue;
+                font-size: $font-med;
+                color:$neonPink;
                 transition: color 300ms ease-in-out;
 
             &:not(:last-child){

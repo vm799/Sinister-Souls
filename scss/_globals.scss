@@ -13,10 +13,12 @@ body{
     font-family: 'Public Sans', sans-serif;
     line-height:1.3;
     font-size:$font-med;
-    color: $darkTeal;
+   color:white;
     font-weight: 300;
 min-height: 200vh; 
 overflow-x:hidden;
+background:black;
+
    
  &.noScroll{
     overflow:hidden;
@@ -29,7 +31,7 @@ h1, h2, h3{
     font-weight: 300;
     font-size: 2.3rem;
     line-height: 1.15;
-    color: $darkTeal;
+    color: white;
 }
 
 p{
@@ -61,7 +63,16 @@ a, a:visited, a:hover{
     max-width: 70rem;
     margin:0 auto;
    
+//color styles
+&--dark{
+    background-color: $darkGrey;
+    color:$neonPink;
+}
 
+&--light{
+    color: $darkGrey;
+    background-color:$neonPink;
+}
 
 //padding styles
 &--pall{
@@ -130,12 +141,12 @@ a, a:visited, a:hover{
 //Buttons
 button, .button{
     padding: 0.875rem 2.1875rem;
-    background: linear-gradient(to right, $yellow, rgb(16, 136, 211));
-    border-radius: 50px;
+    background: linear-gradient(to right, $neonPink, $teal);
+    border-radius: 5px;
     cursor:pointer;
     border:none;
-    color: $offWhite;
-    font-weight: 400;
+    color: white;
+    font-weight: 200;
     display:inline-block;
 
     

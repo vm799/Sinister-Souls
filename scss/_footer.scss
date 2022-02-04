@@ -1,5 +1,5 @@
 .footer {
-    background-color: $darkTeal;
+    background-color: $teal;
     padding: 2.5rem;
     text-align: center;
 color:white;
@@ -17,6 +17,10 @@ color:white;
        gap:1rem;
        justify-items: start;
        }
+}
+
+h3{
+    text-shadow:0px 2px  hotpink;
 }
 
 a{
@@ -84,7 +88,9 @@ a{
     transition: color 150ms ease-in-out;
 
     &:hover{
-        color: $yellow;
+        color: $neonPink;
+        transform:scale(1.5);
+        text-shadow:0px 0px $neonPurple;
     }
 }
 }

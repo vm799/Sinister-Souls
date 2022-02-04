@@ -1,11 +1,12 @@
 .hero{
 height: 60%;
 
+
 .hero-container{
     @include breakpoint-up(large){
         display:flex;
         align-items:center;
-     
+     background-color: black;
         }
 }
 
@@ -13,10 +14,8 @@ height: 60%;
 
     &__image{
             position:relative;
-            background-image: url("../images/kisspng-colorful-shapes-desktop-wallpaper-geometry-line-abstract-background-5acb241d9e1b12.7125545015232624936476.png");
+            background-image: url("../images/aron-visuals-bZZp1PmHI0E-unsplash.jpg");
 
-            
-        
             background-position:  center 100%;
             background-repeat: no-repeat;
             background-size: cover;
@@ -31,7 +30,7 @@ height: 60%;
         @include breakpoint-up(large){
             flex:3;
             order:2;
-            height:45rem;
+            height:100%;
             background-image:none;
            
         }
@@ -39,12 +38,12 @@ height: 60%;
             @include breakpoint-up(large){
                 content:"";
                 position:absolute;
-                background-image:url("../images/kisspng-colorful-shapes-desktop-wallpaper-geometry-line-abstract-background-5acb241d9e1b12.7125545015232624936476.png");
+                background-image:url("../images/aron-visuals-bZZp1PmHI0E-unsplash.jpg");
                 background-repeat: no-repeat;
                 background-size: 85%;
-                width: 115%;
+                width: 100%;
                 height: 120%;
-                top:-4em;
+                top:3.5em;
                 z-index: 5;
             }
         }
@@ -107,7 +106,8 @@ height: 60%;
             font-weight:300px;
             font-size: 2.375rem;
             line-height: 1.15;
-        
+            color:$darkTeal;
+            text-shadow: 0px 1px hotpink; 
 
             @include breakpoint-up(large){
                 font-size: 3.25rem;
@@ -119,7 +119,7 @@ height: 60%;
         p {
             line-height: 1.35;
             padding-bottom: 1.25rem;
-         
+            color: $neonPink;
          
 
             @include breakpoint-up(large){  
