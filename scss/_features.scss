@@ -1,0 +1,75 @@
+.feature {
+   background-color: $veryLightGrey;
+   text-align: center; 
+ 
+   @include breakpoint-up(medium){
+       text-align: left;
+       max-width: 2000px;
+   }
+
+&__intro {
+    margin-bottom: 3.75rem;
+    @include breakpoint-up(large){
+        width:70%;
+       
+    }
+
+}
+
+&__grid{
+    
+
+@include breakpoint-up(medium){
+    display:flex;
+    flex-wrap:wrap; 
+    
+}
+
+@include breakpoint-up(large){
+    display:flex;
+    flex-wrap:nowrap;
+  
+   
+}
+
+}
+
+&__item{
+    padding: 0.9375rem;
+
+    @include breakpoint-up(large){
+       
+        max-width: 25%;
+    }
+    @include breakpoint-up(medium){
+        flex: 0 0 50%;
+
+    }
+}
+
+&__icon{
+    margin-bottom: 1.75rem;
+    @include breakpoint-up(large){
+        margin-bottom: 2.75rem; 
+    }
+   
+}
+
+&__title{
+    font-size:1.25rem;
+    font-weight:300;
+    line-height: 1.15;
+    color:$darkTeal;
+    margin-bottom: 1rem;
+
+    @include breakpoint-up(large){
+        font-size:1.5rem;
+        margin-bottom: 1.5rem;
+    }
+}
+
+&__description{
+ font-size:0.875rem;
+ line-height:1.5;
+}
+}

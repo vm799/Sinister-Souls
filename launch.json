@@ -1,0 +1,17 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        "Node.js: Launch via npm",
+        "JavaScript Debug Terminal",
+        "Launch Chrome to debug a URL",
+        "npm start",
+        "#/definitions/chrome:launch",
+        {
+            "name": "Chrome",
+            "type": "chrome",
+            "request": "launch",
+            "url": "http://localhost:3000",
+            "webRoot": "${workspaceRoot}/src"
+        }
+    ]
+}
