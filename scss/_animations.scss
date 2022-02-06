@@ -143,21 +143,13 @@
 
 @keyframes slider {
     from {
-        margin-left: -2000px;
+        margin-right: -2000px;
       }
     
       to {
-        margin-left: 2000px;
+        margin-right: 2000px;
       }    
     }
 
 
-    @keyframes sliderLarge {
-        from {
-            margin-left: -3000px;
-          }
-        
-          to {
-            margin-left: 3000px;
-          }    
-        }
+   
