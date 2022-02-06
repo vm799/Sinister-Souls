@@ -1,6 +1,46 @@
 @font-face {
   src: url(/font/font/hacked-font/Hacked-KerX.ttf);
 }
+@keyframes fade-bottom {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.reveal {
+  opacity: 0;
+}
+
+.reveal.active {
+  opacity: 1;
+}
+
+.active.fade-bottom {
+  animation: fade-bottom 1s ease-in;
+}
+
+@keyframes ease {
+  from {
+    visibility: hidden;
+    opacity: 0;
+  }
+  1% {
+    visibility: visible;
+    opacity: 0;
+  }
+  to {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+.ease-in {
+  animation: ease 3000ms ease;
+}
+
 .has-fade {
   visibility: hidden;
 }
@@ -69,7 +109,7 @@
   }
 }
 .pulse {
-  animation: pulse 25s;
+  animation: pulse 10s;
   animation-iteration-count: 2 ease-in;
 }
 
@@ -79,7 +119,7 @@
 
 @keyframes slider {
   from {
-    margin-left: -2800px;
+    margin-left: -2000px;
   }
   to {
     margin-left: 2000px;
