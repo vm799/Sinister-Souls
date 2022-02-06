@@ -13,3 +13,9 @@ $offWhite: #f5fffa;
 $font-med:1.125rem;
 $font-sm: 0.75rem;
 
+@font-face {
+    $font-family: hacked;
+    src: url(/font/font/hacked-font/Hacked-KerX.ttf);
+}
+
+$box-shadow:  0 0 8px 8px $neonPink inset;

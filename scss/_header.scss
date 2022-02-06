@@ -1,3 +1,4 @@
+
 .header {
 position:relative;
 z-index:10;
@@ -32,11 +33,15 @@ nav {
        padding-bottom: 0.1625rem;
        width:100%;  
        position: relative;
-
+       
 }
 h3{
-        color:$darkTeal;
-     text-shadow: 0px 1px hotpink; 
+
+    font-family:hacked;
+    
+
+    color:$neonPink;
+    
     }
     
 &__toggle{ 
@@ -72,37 +77,40 @@ h3{
         }
         
     &__links {
-
+        
             a{
+              
                 position:relative;
                 height:26px;
                 font-size: $font-med;
                 color:$neonPink;
                 transition: color 300ms ease-in-out;
 
+                
+                
             &:not(:last-child){
                 margin-right: 36px;
-                }
+                } 
 
-            &::before{
-                content:"";
-                display: block;
-                position:absolute;
-                height:2px;
-                background: linear-gradient(to right, $yellow, $brightCyan);
-                right:0;
-                left:0;
-                bottom: -30px;
-                opacity:0;
-                transition: opacity 300ms ease-in-out;
-            }
-            &:hover {
-                color:$brightCyan;
-                 &::before{
-                    opacity:1;
-           }}
-
-           
+                &:hover {
+                    cursor: pointer;
+                    box-shadow: 0px 1px 50px 5px $teal;     
+               }
+        }
         }     
+
+       
+        &__cta {
+            font-size:$font-sm;
+            color:rgb(0, 255, 255);
+           
+            &:hover{
+                background: linear-gradient(to right, $neonPink, $teal);
+                font-weight: bold;
+                border: 1px solid white;
+            }
+            
+        }
+        
      }
-   }
+   
