@@ -21,21 +21,28 @@ justify-content: center;
 
         .text{
             display: block;
-            line-height: 4rem;
-            padding: 2rem;
+            line-height: 6rem;
+            padding: 1rem;
             letter-spacing: 2.5px;
             text-shadow: 8px 0px 10px $neonPink;
-            font-size: 8rem;
+            font-size: 3rem;
+
+            
+                animation: slider 5s infinite;
+            
 
             @include breakpoint-up(large){
             line-height: 8rem;
             padding: 2rem;
             font-size: 8rem;
+                
+            .text:first-child{
+                animation: slider 5s infinite;
             }
         }
          
     }
 
 }
-
+}
 

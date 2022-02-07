@@ -3,7 +3,10 @@
 position:relative;
 z-index:10;
 background-color: black;
+
+
      // Hamburger open styles
+
 &.open {
     .header__toggle {
         > span:first-child{
@@ -37,8 +40,12 @@ nav {
 }
 h3{
 
-    font-family:hacked;
-    
+    font-family: 'Staatliches', cursive;
+    &:hover{
+        animation: twitch 0.10s;
+        animation-iteration-count: 100;
+        
+    }
 
     color:$neonPink;
     
@@ -60,7 +67,8 @@ h3{
         }
 &__menu{
     position:absolute;
-            background-color: $neonPurple;
+            background-color: rgba(0, 0, 0, 0.803);
+            box-shadow: 0px 0px 10px teal;
             padding:1.625rem;
             width:calc(100% - 3rem);
             left:50%;
@@ -71,6 +79,7 @@ h3{
             a{
                 display:block;
                 color: white;
+                letter-spacing: 5px;
                 padding: 0.625rem;
                 text-align:center;
             }

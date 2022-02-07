@@ -12,6 +12,7 @@ btnHamburger.addEventListener("click", function(){
         e.classList.add("fade-out")
         e.classList.remove("fade-in")
    })
+   
    } else {
        headerMenu.classList.add("open")
        body.classList.add("noScroll")
@@ -29,6 +30,7 @@ function reveal(){
      for(let i=0; i < reveals.length; i++){
           let windowHeight = window.innerHeight
           let elementTop = reveals[i].getBoundingClientRect().top
+          console.log(elementTop)
           let elementVisible = 150
 
           if(elementTop < windowHeight - elementVisible){

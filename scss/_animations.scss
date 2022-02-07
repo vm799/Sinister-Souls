@@ -132,10 +132,9 @@
     animation-iteration-count: 2 ease-in;
 }
 
-.text:first-child{
-    animation: slider 15s infinite;
+
     // animation-delay: 0.5s;
-}
+
 
 
   
@@ -143,13 +142,15 @@
 
 @keyframes slider {
     from {
-        margin-right: -2000px;
+        margin-right: -50px;
       }
     
       to {
-        margin-right: 2000px;
-      }    
-    }
+        margin-right: 50px;
+      }  
+         }
+      
+    
 
 
    
