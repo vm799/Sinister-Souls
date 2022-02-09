@@ -2,13 +2,18 @@
 .articles {
 background-color: $darkGrey;
 
+   h2{
+    padding-bottom: 3rem;
+    color:$neonPink;
+ }
 
 }
 
 
 
 .article {
-
+  
+    
     
 
     &__content {
@@ -29,7 +34,8 @@ background-color: $darkGrey;
     &__item {
        border-radius: 0.3125rem;
        overflow: hidden;
-       background-color: white;
+       background-color: linear-gradient(rgba(3, 57, 57, 0.249), rgba(255, 28, 115, 0.557));
+
        box-shadow: 0px 3px 12px $neonPink; 
        transition: all 150ms ease-in-out;
        &:hover{
@@ -61,11 +67,11 @@ background-color: $darkGrey;
         font-size: 1.1rem;
         line-height: 1.2;
         color: rgb(0, 252, 252);
-        margin-bottom: 0.5rem;
+      
     }
 
     &__description {
         font-size: 0.81rem;
-        color: $darkTeal;
+        color: white;
     }
 }

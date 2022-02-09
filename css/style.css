@@ -109,8 +109,7 @@
   }
 }
 .pulse {
-  animation: pulse 10s;
-  animation-iteration-count: 2 ease-in;
+  animation: pulse 3s;
 }
 
 @keyframes slider {
@@ -380,6 +379,10 @@ button:hover, .button:hover {
   height: 60%;
   padding-bottom: 200px;
 }
+.hero h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 100;
+}
 @media (min-width: 64em) {
   .hero .hero-container {
     display: flex;
@@ -419,11 +422,13 @@ button:hover, .button:hover {
   }
 }
 .hero__text h1 {
-  font-weight: 300px;
+  font-weight: 600;
   font-size: 2.375rem;
   line-height: 1.15;
   color: #00fefe;
   text-shadow: 0px 3px hotpink;
+  letter-spacing: 2px;
+  margin-bottom: 4rem;
 }
 @media (min-width: 64em) {
   .hero__text h1 {
@@ -512,6 +517,7 @@ button:hover, .button:hover {
 }
 .feature__title h2 {
   font-size: 1.5rem;
+  color: #0beafa;
 }
 @media (min-width: 64em) {
   .feature__title h2 {
@@ -530,6 +536,10 @@ button:hover, .button:hover {
 
 .articles {
   background-color: #0b0b0b;
+}
+.articles h2 {
+  padding-bottom: 3rem;
+  color: #ff0080;
 }
 
 .article__grid {
@@ -550,7 +560,7 @@ button:hover, .button:hover {
 .article__item {
   border-radius: 0.3125rem;
   overflow: hidden;
-  background-color: white;
+  background-color: linear-gradient(rgba(3, 57, 57, 0.249), rgba(255, 28, 115, 0.557));
   box-shadow: 0px 3px 12px #ff0080;
   transition: all 150ms ease-in-out;
 }
@@ -580,11 +590,10 @@ button:hover, .button:hover {
   font-size: 1.1rem;
   line-height: 1.2;
   color: #00fcfc;
-  margin-bottom: 0.5rem;
 }
 .article__description {
   font-size: 0.81rem;
-  color: #264348;
+  color: white;
 }
 
 .footer {
@@ -611,6 +620,7 @@ button:hover, .button:hover {
   font-family: "Staatliches", cursive;
   line-height: 2rem;
   color: black;
+  text-shadow: 0px 0px 3px #9f31ff;
 }
 .footer h3:hover {
   animation: twitch 0.1s;
@@ -672,12 +682,13 @@ button:hover, .button:hover {
 .footer__links a {
   line-height: 2.25;
   transition: color 150ms ease-in-out;
+  color: white;
+  text-shadow: 0px 0px 3px #01ffff;
 }
 .footer__links a:hover {
-  color: #ff0080;
+  color: white;
   transform: scale(1.5);
-  text-shadow: 0px 0px #9f31ff;
-  border: 4px solid white;
+  text-shadow: 0px 0px 5px #01ffff;
 }
 @media (min-width: 64em) {
   .footer__cta {
@@ -712,6 +723,7 @@ button:hover, .button:hover {
 
 .imageBlock {
   height: 60%;
+  margin: 5rem 0;
 }
 @media (min-width: 64em) {
   .imageBlock .imageBlock-container {
@@ -794,6 +806,7 @@ button:hover, .button:hover {
   }
 }
 .imageBlock__text h1 {
+  margin-top: 4rem;
   font-weight: 300px;
   font-size: 2.375rem;
   line-height: 1.15;
@@ -850,7 +863,7 @@ button:hover, .button:hover {
   padding: 1rem;
   letter-spacing: 2.5px;
   text-shadow: 8px 0px 10px #ff0080;
-  font-size: 3rem;
+  font-size: 1.5rem;
   animation: slider 5s infinite;
 }
 @media (min-width: 64em) {

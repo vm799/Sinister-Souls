@@ -116,20 +116,14 @@
     0% {
         transform: scale(0);
     }
-    // 15% {
-    //     transform: translateX(1px);
-    // }
-    // 75% {
-    //     transform: translateX(-1px);
-    
+   
     100% {
         transform: scale(1);
     }
 }
 
 .pulse {
-    animation: pulse 10s;
-    animation-iteration-count: 2 ease-in;
+    animation: pulse 3s;
 }
 
 

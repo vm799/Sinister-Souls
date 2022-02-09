@@ -28,7 +28,7 @@ h3{
     font-family: 'Staatliches', cursive;
     line-height: 2rem;
         color:black;
-
+        text-shadow:0px 0px 3px $neonPurple;
         &:hover{
             animation: twitch 0.10s;
             animation-iteration-count: 100;
@@ -72,6 +72,7 @@ margin-bottom: 1.875rem;
     flex-direction: column;
     align-items:center;
     font-size:0.9375rem;
+   
 
     @include breakpoint-up(large){
         align-items: middle;
@@ -98,12 +99,14 @@ margin-bottom: 1rem;
 a{
     line-height:2.25;
     transition: color 150ms ease-in-out;
+    color: white;
+    text-shadow:0px 0px 3px rgb(1, 255, 255);
 
     &:hover{
-        color: $neonPink;
+        color: white;
         transform:scale(1.5);
-        text-shadow:0px 0px $neonPurple;
-        border: 4px solid white;
+        text-shadow:0px 0px 5px rgb(1, 255, 255);
+       
     }
 }
 }
