@@ -1,27 +1,29 @@
-const btnHamburger = document.getElementById("btnHamburger")
-const headerMenu= document.querySelector(".header")
-const overlay=document.querySelector(".overlay")
-const fadeEls= document.querySelectorAll(".has-fade")
-const body=document.querySelector("body")
+const btnHamburger = document.querySelector('#btnHamburger');
+const body = document.querySelector('body');
+const header = document.querySelector('.header');
+const overlay = document.querySelector('.overlay');
+const fadeElems = document.querySelectorAll('.has-fade');
 
-btnHamburger.addEventListener("click", function(){
-   if(headerMenu.classList.contains("open")){
-   headerMenu.classList.remove("open")
-   body.classList.remove("noScroll")
-   fadeEls.forEach(function(e){
-        e.classList.add("fade-out")
-        e.classList.remove("fade-in")
-   })
-   
-   } else {
-       headerMenu.classList.add("open")
-       body.classList.add("noScroll")
-   fadeEls.forEach(function(e){
-        e.classList.add("fade-in")
-        e.classList.remove("fade-out")
-   })
+btnHamburger.addEventListener('click', function(){
 
-}
+  if(header.classList.contains('open')){ // Close Hamburger Menu
+    body.classList.remove('noscroll');
+    header.classList.remove('open');    
+    fadeElems.forEach(function(element){
+      element.classList.remove('fade-in');
+      element.classList.add('fade-out');
+    })
+    
+  }
+  else { // Open Hamburger Menu
+    body.classList.add('noscroll');
+    header.classList.add('open');
+    fadeElems.forEach(function(element){
+      element.classList.remove('fade-out');
+      element.classList.add('fade-in');
+    })
+
+  }  
 })
 
 function reveal(){
@@ -30,7 +32,7 @@ function reveal(){
      for(let i=0; i < reveals.length; i++){
           let windowHeight = window.innerHeight
           let elementTop = reveals[i].getBoundingClientRect().top
-          console.log(elementTop)
+          // console.log(elementTop)
           let elementVisible = 150
 
           if(elementTop < windowHeight - elementVisible){

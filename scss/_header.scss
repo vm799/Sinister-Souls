@@ -1,7 +1,7 @@
 
 .header {
 position:relative;
-z-index:10;
+z-index:1;
 background-color: black;
 
 
@@ -20,18 +20,20 @@ background-color: black;
     }
   }
 }
-.overlay {
-opacity:0;
-position:fixed;
-top:69px;
-bottom:0;
-right:0;
-left:0;
-background-image: linear-gradient( transparent, $neonPink );
 
-}
+    .overlay {
+    position: fixed;
+    top:0px;
+    bottom:0px;
+    right:0px;
+    left:0px;
+    background-image: linear-gradient(rgba(0, 128, 128, 0.249), rgba(255, 28, 115, 0.557));
+    color: white;
+    }
 
-nav {
+
+
+nav { 
        padding-top: 0.1625rem;
        padding-bottom: 0.1625rem;
        width:100%;  
@@ -48,7 +50,7 @@ h3{
     }
 
     color:$neonPink;
-    
+  
     }
     
 &__toggle{ 
@@ -75,7 +77,7 @@ h3{
             transform:translateX(-50%) ;
             margin-top: 1.5rem;
             border-radius: 5px;
-
+            ;
             a{
                 display:block;
                 color: white;
