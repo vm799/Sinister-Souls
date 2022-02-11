@@ -60,7 +60,7 @@ if (imagePosition === totalImages -1){
 imagePosition = 0}
 else {imagePosition ++}
 images[imagePosition].classList.add("image-slider__item-visible")
-setTimeout(moveToNextImage,3000)
+setTimeout(moveToNextImage,4000)
 }
 
 function hideAllImages(){
