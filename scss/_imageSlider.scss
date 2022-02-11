@@ -1,32 +1,26 @@
 .image-slider { 
     position: relative;
-   
+
+
+
+
     &__content {
         width:100%;
         flex-direction: column;
     }
 
-    // &__grid {
-    //     border: 5px solid hotpink;
-    //     display:grid;
-    //     grid-template-columns: 1fr;
-       
 
-    //     @include breakpoint-up(medium){
-    //         grid-template-columns: repeat(2,1fr);
-    //     }
-    //     @include breakpoint-up(large){
-    //         grid-template-columns: repeat(4,1fr);
-    //     }
-    // }
     &__item {
+
+        @include breakpoint-up(medium){
+            width: 45rem;
+        }
         &-hidden{
             display:none;
         }
-       border: 5px solid hotpink;
        display: none;
        
-       width: 35rem;
+  
        height: 32rem;
        border-radius: 0.3125rem;
        overflow: hidden;
@@ -46,7 +40,7 @@
     }
    
     &__image {
-       
+       display:flex;
     width:100%;
     height:100%;
     background-size: cover;
@@ -59,11 +53,18 @@
      }
  &__actions{
     top: 50%;
-    width: 35rem;
     position:absolute;
-    
-
+  width:90%;
+@include breakpoint-up(large){
+    width:45rem;
+}
+@include breakpoint-up(medium){
+    width:40rem;
+}
  }
+
+ 
+ 
 
  button{
     border-radius: 50%;
@@ -72,6 +73,8 @@
     font-size: 1rem;
     cursor: pointer;
     color: grey;
+padding-left: 2rem;
+   
 
 //   &:hover {
 //     box-shadow: $box-shadow;

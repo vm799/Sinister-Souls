@@ -292,10 +292,22 @@ button:hover, .button:hover {
   }
 }
 
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
 .header {
   position: relative;
   z-index: 1;
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.749);
+}
+.header.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 12%;
 }
 .header.open .header__toggle > span:first-child {
   transform: rotate(45deg);
@@ -385,6 +397,7 @@ button:hover, .button:hover {
 .hero {
   height: 60%;
   padding-bottom: 200px;
+  padding-top: 200px;
 }
 .hero h2 {
   font-family: Arial, Helvetica, sans-serif;
@@ -470,15 +483,18 @@ button:hover, .button:hover {
   flex-direction: column;
 }
 .image-slider__item {
-  border: 5px solid hotpink;
   display: none;
-  width: 35rem;
   height: 32rem;
   border-radius: 0.3125rem;
   overflow: hidden;
   background-color: linear-gradient(rgba(3, 57, 57, 0.249), rgba(255, 28, 115, 0.557));
   box-shadow: 0px 3px 12px #ff0080;
   transition: all 150ms ease-in-out;
+}
+@media (min-width: 40em) {
+  .image-slider__item {
+    width: 45rem;
+  }
 }
 .image-slider__item-hidden {
   display: none;
@@ -491,6 +507,7 @@ button:hover, .button:hover {
   display: flex;
 }
 .image-slider__image {
+  display: flex;
   width: 100%;
   height: 100%;
   background-size: cover;
@@ -501,8 +518,18 @@ button:hover, .button:hover {
 }
 .image-slider__actions {
   top: 50%;
-  width: 35rem;
   position: absolute;
+  width: 90%;
+}
+@media (min-width: 64em) {
+  .image-slider__actions {
+    width: 45rem;
+  }
+}
+@media (min-width: 40em) {
+  .image-slider__actions {
+    width: 40rem;
+  }
 }
 .image-slider button {
   border-radius: 50%;
@@ -511,6 +538,7 @@ button:hover, .button:hover {
   font-size: 1rem;
   cursor: pointer;
   color: grey;
+  padding-left: 2rem;
 }
 
 .feature {

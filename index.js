@@ -81,9 +81,19 @@ function moveToPrevImage(){
     images[imagePosition].classList.add("image-slider__item-visible") 
 }
 
-// function autoMoveImage(){
-//  for(let image of images){
 
-//  }
+const navBar = document.querySelector(".navbar")
+let stickyPosition = navBar.offsetTop
 
+function stickyNavOnScroll(){
+  // console.log(stickyPosition)
+  // console.log(window.pageYOffset)
+  // if (window.pageYOffset > stickyPosition) {
+    navBar.classList.add("sticky")
+// } else {
+//   navBar.classList.remove("sticky")
+// }
+}
+
+window.onscroll = function(){stickyNavOnScroll()}
 
