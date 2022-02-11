@@ -52,12 +52,15 @@ const totalImages = images.length
 document.getElementById("image-slider__prev").addEventListener("click", moveToPrevImage )
 document.getElementById("image-slider__next").addEventListener("click", moveToNextImage )
 
+
+
 function moveToNextImage(){
   hideAllImages()  
 if (imagePosition === totalImages -1){
 imagePosition = 0}
 else {imagePosition ++}
 images[imagePosition].classList.add("image-slider__item-visible")
+setTimeout(moveToNextImage,3000)
 }
 
 function hideAllImages(){
@@ -77,3 +80,10 @@ function moveToPrevImage(){
     
     images[imagePosition].classList.add("image-slider__item-visible") 
 }
+
+// function autoMoveImage(){
+//  for(let image of images){
+
+//  }
+
+

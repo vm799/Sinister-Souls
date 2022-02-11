@@ -41,6 +41,7 @@
        &-visible{
         display: block;
         display:flex;
+        // animation: smoothSlider 0.5s;
     }
     }
    
@@ -70,7 +71,7 @@
     border:none;
     font-size: 1rem;
     cursor: pointer;
-    
+    color: grey;
 
 //   &:hover {
 //     box-shadow: $box-shadow;

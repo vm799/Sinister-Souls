@@ -120,6 +120,18 @@
     margin-right: 50px;
   }
 }
+@keyframes smoothSlider {
+  0% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.smoothSlider {
+  animation: smoothSlider 0.5s;
+}
+
 html {
   font-size: 100%;
   box-sizing: border-box;
@@ -498,6 +510,7 @@ button:hover, .button:hover {
   border: none;
   font-size: 1rem;
   cursor: pointer;
+  color: grey;
 }
 
 .feature {
